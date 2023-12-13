@@ -92,7 +92,7 @@
 
                 <div class="field">
                     <label for="genre">genre</label>
-                    <input type="text" pInputText id="genre" [(ngModel)]="book.genre" required autofocus [ngClass]="{'ng-invalid ng-dirty' : submitted && !book.genre}"/>
+                    <p-dropdown [options]="genres" [(ngModel)]="book.genre" optionLabel="name"></p-dropdown>
                     <small class="ng-dirty ng-invalid" *ngIf="submitted && !book.grenre">genre is required.</small>
                 </div>
 
