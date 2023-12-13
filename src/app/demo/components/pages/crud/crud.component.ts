@@ -28,9 +28,8 @@ export class CrudComponent implements OnInit {
 
     statuses: any[] = [];
 
+    // criando generos
     genres: any[] = [];
-
-    
 
     rowsPerPageOptions = [5, 10, 20];
 
