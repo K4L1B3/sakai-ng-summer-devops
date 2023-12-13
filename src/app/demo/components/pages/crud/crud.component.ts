@@ -28,6 +28,10 @@ export class CrudComponent implements OnInit {
 
     statuses: any[] = [];
 
+    genres: any[] = [];
+
+    
+
     rowsPerPageOptions = [5, 10, 20];
 
     constructor(private bookService: BookService, private messageService: MessageService) { }
@@ -43,6 +47,13 @@ export class CrudComponent implements OnInit {
             { field: 'author', header: 'Author' },
             { field: 'language', header: 'Langugage' },
             { field: 'description', header: 'description' },
+        ];
+
+         this.genres = [
+            {name: 'Terror', code: 'Terror'},
+            {name: 'Fantasia', code: 'Fantasia'},
+            {name: 'Aventura', code: 'Aventura'},
+            {name: 'Romance', code: 'Romance'}
         ];
 
     }
